@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+nav{
+    background: #b51ebf;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav ul li{
+    margin-right: 10px;
+}
+
+nav ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:first-child{
+    margin-left: 10px;
+}
+
+.main{
+    background-color: #000;
+}
+
+.img{
+    margin: 0 auto 20px auto;
+    width: 500px;
+}
+
+.img img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.main{
+    padding: 40px 0;
+}
+
+.main h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.img-wrapper{
+    max-width: 400px;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.biography-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.biography{
+    background-color: #3c3b3b;
+    padding: 10px;
+    margin-right: 20px;
+    width: 60%;
+}
+
+.biography-right{
+    width: 30%;
+}
+
+.biography h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.biography ul{
+    color: #fff;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+.biography ul li, .biography p {
+    font-size: 20px;
+}
+
+.biography .description{
+    margin-left: 30px;
+}
+
+.pictures-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture-wrapper{
+    width: calc(100%/3 - 80px);
+    margin: 0 auto 20px auto;
+}
+
+.picture-wrapper img, .contact-img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-wrapper{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.my-info{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.my-info h2{
+    font-size: 34px;
+}
+
+.blog h2{
+    margin-bottom: 80px;
+}
+
+.blog-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.blog-left{
+    width: 35%;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.blog-right{
+    width: 35%;
+}
+
+.blog-left h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.blog-left p{
+    font-size: 18px;
+}
+
+.blog-left p:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.blog-img{
+    height: 350px;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .biography, .biography-right{
+        width: 100%;
+    }
+
+    .my-info h2{
+        overflow: scroll;
+    }
+
+    .blog-left{
+        margin-bottom: 40px;
+    }
+
+    .blog-left, .blog-right{
+        width: 100%;
+    }
+}
