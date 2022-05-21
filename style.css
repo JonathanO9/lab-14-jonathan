@@ -215,8 +215,22 @@ nav ul li a:first-child{
         font-size: 32px;
     }
 
+    .main h2 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .picture-wrapper {
+        width: calc(100% - 80px);
+        margin: 0 auto 20px auto;
+    }
+
     nav ul li a {
         font-size: 18px;
+    }
+
+    .biography {
+        margin-bottom: 40px;
     }
 
     .biography, .biography-right{
